@@ -31,36 +31,6 @@ body {
   text-align: center;
 }
 
-.split-gallery {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-  margin-top: 28px;
-}
-
-.split-photo {
-  overflow: hidden;
-  border-radius: 18px;
-  background: #fff;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
-
-.split-photo img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-.left-photo {
-  height: 420px;
-  object-position: left center;
-}
-
-.right-photo {
-  height: 420px;
-  object-position: right center;
-}
-
 .eyebrow {
   color: var(--primary);
   font-weight: 700;
@@ -208,14 +178,5 @@ h1 {
 @media (max-width: 640px) {
   .hero {
     padding: 56px 18px;
-  }
-
-  .split-gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .left-photo,
-  .right-photo {
-    height: 300px;
   }
 }
